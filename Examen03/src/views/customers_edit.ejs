@@ -1,0 +1,63 @@
+<% include partials/_header %>
+
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-md-5 offset-md-3 card">
+      <div class="card-body">
+        <form action="/update/<%= data.CODIGO %>" method="POST">
+          <div class="form-group">
+            <input type="text" name="CODIGO" value="<%= data.CODIGO%>" placeholder="CODIGO" class="form-control" autofocus>
+          </div>
+
+          <div class="form-group">
+            <input type="text" name="DEPARTAMENTO" value="<%= data.DEPARTAMENTO%>" placeholder="DEPARTAMENTO" class="form-control">
+          </div>
+
+          <div class="form-group">
+            <input type="text" name="MUNICIPIO" value="<%= data.MUNICIPIO%>" placeholder="MUNICIPIO" class="form-control">
+          </div>
+
+           <div class="form-group">
+            <input type="text" name="CENTRO_POBLADO" value="<%= data.CENTRO_POBLADO%>" placeholder="CENTRO_POBLADO" class="form-control">
+          </div>
+
+          <div class="form-group">
+           <input type="text" name="NATURALEZA_BIBLIOTECA" value="<%= data.NATURALEZA_BIBLIOTECA%>" placeholder="NATURALEZA_BIBLIOTECA" class="form-control">
+         </div>
+
+         <div class="form-group">
+          <input type="text" name="TIPO_BIBLIOTECA" value="<%= data.TIPO_BIBLIOTECA%>" placeholder="TIPO_BIBLIOTECA" class="form-control">
+        </div>
+
+        <div class="form-group">
+         <input type="text" name="NOMBRE_BIBLIOTECA" value="<%= data.NOMBRE_BIBLIOTECA%>" placeholder="NOMBRE_BIBLIOTECA" class="form-control">
+       </div>
+
+       <div class="form-group">
+        <input type="text" name="DIRECCION_BIBLIOTECA" value="<%= data.DIRECCION_BIBLIOTECA%>" placeholder="DIRECCION_BIBLIOTECA" class="form-control">
+      </div>
+
+      <div class="form-group">
+       <input type="text" name="TELEFONO" value="<%= data.TELEFONO%>" placeholder="TELEFONO" class="form-control">
+     </div>
+
+     <div class="form-group">
+      <input type="text" name="ESTADO_BIBLIOTECA" value="<%= data.ESTADO_BIBLIOTECA%>" placeholder="ESTADO_BIBLIOTECA" class="form-control">
+    </div>
+
+    <div class="form-group">
+     <input type="text" name="GEOREFERENCIA" value="<%= data.GEOREFERENCIA%>" placeholder="GEOREFERENCIA" class="form-control">
+   </div>
+
+
+
+          <button type="submit" class="btn btn-primary">
+            GUARDAR BIBLIOTECA
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<% include partials/_footer %>
